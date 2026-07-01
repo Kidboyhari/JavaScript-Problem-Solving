@@ -11,7 +11,12 @@ function waitInQueue() {
     });
 }
 async function buyHalwa(){
+    try{
    let result = await waitInQueue();
    console.log(result);
+    }
+    catch(error){
+        console.log(error);
+    }
 }
 buyHalwa();
