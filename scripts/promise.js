@@ -16,7 +16,7 @@ async function buyHalwa(){
    console.log(result);
     }
     catch(error){
-        console.log(error);
+        console.log('Halwa Over');
     }
 }
 buyHalwa();
