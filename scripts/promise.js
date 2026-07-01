@@ -1,4 +1,4 @@
-isHalwaThere = false;
+isHalwaThere = true;
 function waitInQueue() {
     return new Promise((resolve, reject) =>{
         setTimeout(()=>{
@@ -9,17 +9,9 @@ function waitInQueue() {
             }
         });
     });
-};
-function BuyHalwa(){
-    waitInQueue().then((message) =>{
-        console.log(message);
-    })
-    .catch((error) =>{
-        console.log(error);
-    })
-    .finally(() => {
-        console.log('Go Home');
-    })
-};
-BuyHalwa();
-console.log('Halwa Wala')
+}
+async function buyHalwa(){
+   let result = await waitInQueue();
+   console.log(result);
+}
+buyHalwa();
