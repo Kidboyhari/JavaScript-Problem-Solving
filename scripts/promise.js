@@ -22,3 +22,4 @@ function BuyHalwa(){
     })
 };
 BuyHalwa();
+console.log('Halwa Wala')
